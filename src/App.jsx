@@ -35,7 +35,7 @@ const NAV_ITEMS = [
 // ─── City Data for Calculator ───
 const CITIES = {
   bangkok: { name: "Bangkok", rentSqm: 10, devSalary: 2250, costIndex: 40, flag: "TH" },
-  hcmc: { name: "Ho Chi Minh City", rentSqm: 12, devSalary: 1800, costIndex: 35, flag: "VN" },
+  hcmc: { name: "Saigon", rentSqm: 12, devSalary: 1800, costIndex: 35, flag: "VN" },
   dubai: { name: "Dubai", rentSqm: 45, devSalary: 5500, costIndex: 62, flag: "AE" },
   singapore: { name: "Singapore", rentSqm: 120, devSalary: 7500, costIndex: 81, flag: "SG" },
   tokyo: { name: "Tokyo", rentSqm: 43, devSalary: 5000, costIndex: 70, flag: "JP" },
@@ -475,7 +475,7 @@ const CASE_STUDIES = {
   },
   sui: {
     name: "Sui Vietnam Community",
-    location: "Ho Chi Minh City, Vietnam",
+    location: "Saigon (HCMC), Vietnam",
     status: "Active (no permanent space)",
     statusColor: C.amber,
     funding: "Sui Foundation grants",

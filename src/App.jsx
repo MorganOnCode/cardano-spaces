@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend } from "recharts";
 import { Building2, Calendar, DollarSign, Users, TrendingUp, MapPin, ExternalLink, ChevronDown, Globe, Zap, Shield, BookOpen, ArrowRight, ArrowDown, Check, X, AlertTriangle, BarChart3, Calculator, Home, Newspaper, Clock, Star, ChevronRight } from "lucide-react";
+import { Analytics } from '@vercel/analytics/react';
 
 // ─── Design Tokens ───
 const C = {
@@ -395,7 +396,7 @@ const OFFICE_LISTINGS = {
   ],
 };
 
-// ─── Case Studies Data ───
+// ���── Case Studies Data ───
 const CASE_STUDIES = {
   superteam: {
     name: "Solana Superteam Shipyard",
@@ -1214,7 +1215,7 @@ function CalculatorPage() {
 
 // ═══════════════════════════════════════════════
 // CASE STUDIES PAGE (with references)
-// ═══════════════════════════════════════════════
+// ═══════════════════════════��═══════════════════
 function CaseStudiesPage() {
   const [activeCase, setActiveCase] = useState("superteam");
   const c = CASE_STUDIES[activeCase];
@@ -1729,6 +1730,7 @@ export default function App() {
           </p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }

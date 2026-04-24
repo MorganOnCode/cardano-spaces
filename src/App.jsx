@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend } from "recharts";
 import { Building2, Calendar, DollarSign, Users, TrendingUp, MapPin, ExternalLink, ChevronDown, Globe, Zap, Shield, BookOpen, ArrowRight, ArrowDown, Check, X, AlertTriangle, BarChart3, Calculator, Home, Newspaper, Clock, Star, ChevronRight } from "lucide-react";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 // ─── Design Tokens ───
 const C = {
@@ -1215,7 +1216,7 @@ function CalculatorPage() {
 
 // ═══════════════════════════════════════════════
 // CASE STUDIES PAGE (with references)
-// ═══════════════════════════��═══════════════════
+// ═══════��═══════════════════��═══════════════════
 function CaseStudiesPage() {
   const [activeCase, setActiveCase] = useState("superteam");
   const c = CASE_STUDIES[activeCase];
@@ -1731,6 +1732,7 @@ export default function App() {
         </div>
       </footer>
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
